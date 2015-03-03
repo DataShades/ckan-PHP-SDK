@@ -189,7 +189,7 @@ class CKAN
 
         curl_setopt_array($ch, array(CURLOPT_HTTPHEADER => array('Expect: ', 'Authorization: ' . rawurlencode($this->api_key), 'X-CKAN-API-Key: ' . rawurlencode($this->api_key)),
             CURLOPT_HEADER => FALSE,
-            CURLOPT_USERAGENT => "DoF: CKAN PHP Updater",
+            CURLOPT_USERAGENT => "CKAN PHP Updater",
             CURLOPT_URL => $this->ckan_base_url . "/api/action/package_update",
             CURLOPT_POST => TRUE,
             CURLOPT_POSTFIELDS => json_encode($dataset_update_vars),
@@ -232,7 +232,7 @@ class CKAN
         //set our CURL option and provide auth as we may be dealing with a private dataset.
         curl_setopt_array($ch, array(CURLOPT_HTTPHEADER => array('Authorization: ' . rawurlencode($this->api_key), 'X-CKAN-API-Key: ' . rawurlencode($this->api_key)),
             CURLOPT_HEADER => FALSE,
-            CURLOPT_USERAGENT => "DoF: CKAN PHP Updater",
+            CURLOPT_USERAGENT => "CKAN PHP Updater",
             CURLOPT_URL => $this->ckan_base_url . "/api/action/package_show",
             CURLOPT_POST => TRUE,
             CURLOPT_POSTFIELDS => $dataset_id_json,
@@ -269,7 +269,7 @@ class CKAN
         //set our CURL option and provide auth as we may be dealing with a private dataset.
         curl_setopt_array($ch, array(CURLOPT_HTTPHEADER => array('Authorization: ' . rawurlencode($this->api_key), 'X-CKAN-API-Key: ' . rawurlencode($this->api_key)),
             CURLOPT_HEADER => FALSE,
-            CURLOPT_USERAGENT => "DoF: CKAN PHP Updater",
+            CURLOPT_USERAGENT => "CKAN PHP Updater",
             CURLOPT_URL => $this->ckan_base_url . "/api/action/resource_show",
             CURLOPT_POST => TRUE,
             CURLOPT_POSTFIELDS => $resource_id_json,
@@ -342,7 +342,7 @@ class CKAN
         curl_setopt_array($ch,
             array(CURLOPT_HTTPHEADER => array('Authorization: ' . rawurlencode($this->api_key), 'X-CKAN-API-Key: ' . rawurlencode($this->api_key)),
                 CURLOPT_HEADER => FALSE,
-                CURLOPT_USERAGENT => "DoF: CKAN PHP Updater",
+                CURLOPT_USERAGENT => "CKAN PHP Updater",
                 CURLOPT_URL => $this->ckan_base_url . "/api/action/resource_create",
                 CURLOPT_POST => TRUE,
                 CURLOPT_POSTFIELDS => $add_resource_vars,
@@ -410,7 +410,7 @@ class CKAN
         curl_setopt_array($ch,
             array(CURLOPT_HTTPHEADER => array('Authorization: ' . rawurlencode($this->api_key), 'X-CKAN-API-Key: ' . rawurlencode($this->api_key)),
                 CURLOPT_HEADER => FALSE,
-                CURLOPT_USERAGENT => "DoF: CKAN PHP Updater",
+                CURLOPT_USERAGENT => "CKAN PHP Updater",
                 CURLOPT_URL => $this->ckan_base_url . "/api/action/resource_update",
                 CURLOPT_POST => TRUE,
                 CURLOPT_POSTFIELDS => json_encode($resource_vars),
@@ -445,7 +445,7 @@ class CKAN
         //set our CURL option and provide auth as we may be dealing with a private dataset.
         curl_setopt_array($ch, array(CURLOPT_HTTPHEADER => array('Authorization: ' . rawurlencode($this->api_key), 'X-CKAN-API-Key: ' . rawurlencode($this->api_key)),
             CURLOPT_HEADER => FALSE,
-            CURLOPT_USERAGENT => "DoF: CKAN PHP Class",
+            CURLOPT_USERAGENT => "CKAN PHP Class",
             CURLOPT_URL => $this->ckan_base_url . "/api/action/datastore_search_sql",
             CURLOPT_POST => TRUE,
             CURLOPT_POSTFIELDS => json_encode($search_resource),
@@ -469,7 +469,7 @@ class CKAN
         //set our CURL option and provide auth as we may be dealing with a private dataset.
         curl_setopt_array($ch, array(CURLOPT_HTTPHEADER => array('Authorization: ' . rawurlencode($this->api_key), 'X-CKAN-API-Key: ' . rawurlencode($this->api_key)),
             CURLOPT_HEADER => FALSE,
-            CURLOPT_USERAGENT => "DoF: CKAN PHP Class",
+            CURLOPT_USERAGENT => "CKAN PHP Class",
             CURLOPT_URL => $this->ckan_base_url . "/api/action/datastore_search",
             CURLOPT_POST => TRUE,
             CURLOPT_POSTFIELDS => json_encode($search_resource),
@@ -495,7 +495,7 @@ class CKAN
         //set our CURL option and provide auth as we may be dealing with a private dataset.
         curl_setopt_array($ch, array(CURLOPT_HTTPHEADER => array('Authorization: ' . rawurlencode($this->api_key), 'X-CKAN-API-Key: ' . rawurlencode($this->api_key)),
             CURLOPT_HEADER => FALSE,
-            CURLOPT_USERAGENT => "DoF: CKAN PHP Class",
+            CURLOPT_USERAGENT => "CKAN PHP Class",
             CURLOPT_URL => $this->ckan_base_url . "/api/action/datastore_search",
             CURLOPT_POST => TRUE,
             CURLOPT_POSTFIELDS => json_encode($search_resource),
@@ -521,7 +521,7 @@ class CKAN
         //set our CURL option and provide auth as we may be dealing with a private dataset.
         curl_setopt_array($ch, array(CURLOPT_HTTPHEADER => array('Authorization: ' . rawurlencode($this->api_key), 'X-CKAN-API-Key: ' . rawurlencode($this->api_key)),
             CURLOPT_HEADER => FALSE,
-            CURLOPT_USERAGENT => "DoF: CKAN PHP Class",
+            CURLOPT_USERAGENT => "CKAN PHP Class",
             CURLOPT_URL => $this->ckan_base_url . "/api/action/package_search",
             CURLOPT_POST => TRUE,
             CURLOPT_POSTFIELDS => json_encode($search_resource),
