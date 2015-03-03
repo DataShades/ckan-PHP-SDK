@@ -112,7 +112,7 @@ class CKAN
 
         curl_setopt_array($ch, array(CURLOPT_HTTPHEADER => array('Expect: ', 'Authorization: ' . rawurlencode($this->api_key), 'X-CKAN-API-Key: ' . rawurlencode($this->api_key)),
             CURLOPT_HEADER => FALSE,
-            CURLOPT_USERAGENT => "DoF: CKAN PHP Updater",
+            CURLOPT_USERAGENT => "CKAN PHP Updater",
             CURLOPT_URL => $this->ckan_base_url . "/api/action/package_create",
             CURLOPT_POST => TRUE,
             CURLOPT_POSTFIELDS => json_encode($dataset_create_vars),
@@ -126,9 +126,6 @@ class CKAN
         $return_object = json_decode($response);
 
         //print_r($dataset_create_vars);
-
-        //Australian Reinsurance Pool Corporation FOI Disclosure Log
-
         //print_r($return_object);
 
         if (empty($return_object->result->id)) {
